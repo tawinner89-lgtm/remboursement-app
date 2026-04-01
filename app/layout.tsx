@@ -1,19 +1,19 @@
-// ✅ Correct
-import type { Metadata } from 'next'
+import type { Metadata } from "next";
+import "./globals.css";
 
 export const metadata: Metadata = {
-  title: 'My App',
-  description: '...',
-}
+  title: "RemboursementPro",
+  description: "Service professionnel de remboursement",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <body>{children}</body>
     </html>
-  )
+  );
 }
